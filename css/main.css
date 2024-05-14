@@ -72,6 +72,11 @@ h2 {
   border-radius: 1.5625rem;
   cursor: pointer;
 }
+@media (min-width: 48rem) {
+  .btn:is(:link, :visited) {
+    margin-top: 3.625rem;
+  }
+}
 .btn--clr-french-toast:is(:link, :visited) {
   color: hsl(31, 77%, 52%);
 }

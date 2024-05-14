@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 .btn {
   &:is(:link, :visited) {
     background-color: $clr-white;
@@ -8,6 +9,9 @@
     border: 0.125rem solid $clr-white;
     border-radius: 1.5625rem;
     cursor: pointer;
+    @include tablet {
+      margin-top: 3.625rem;
+    }
   }
   &--clr-french-toast {
     &:is(:link, :visited) {

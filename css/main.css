@@ -91,16 +91,16 @@ h2 {
 }
 .card--bg-french-toast {
   background-color: hsl(31, 77%, 52%);
-  border-top-left-radius: 1.5625rem;
-  border-top-right-radius: 1.5625rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 .card--bg-fanfare {
   background-color: hsl(184, 100%, 22%);
 }
 .card--bg-rich-black {
   background-color: hsl(179, 100%, 13%);
-  border-bottom-left-radius: 1.5625rem;
-  border-bottom-right-radius: 1.5625rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 @media (min-width: 30.0625rem) {
   .card {
@@ -115,12 +115,12 @@ h2 {
   }
   .card--bg-french-toast {
     border-top-right-radius: 0;
-    border-bottom-left-radius: 1.5625rem;
+    border-bottom-left-radius: 0.5rem;
   }
   .card--bg-rich-black {
     border-bottom-left-radius: 0;
-    border-top-right-radius: 1.5625rem;
-    border-bottom-right-radius: 1.5625rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 }
 @media (min-width: 64.0625rem) {

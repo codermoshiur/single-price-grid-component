@@ -10,8 +10,8 @@
 
 ### Links
 
-- Live Site URL: []()
-- Solution URL: []()
+- Live Site URL: [https://codermoshiur.github.io/single-price-grid-component/](https://codermoshiur.github.io/single-price-grid-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/single-price-grid-component-using-sass-CQ4rSTXprF](https://www.frontendmentor.io/solutions/single-price-grid-component-using-sass-CQ4rSTXprF)
 
 ## My process
 

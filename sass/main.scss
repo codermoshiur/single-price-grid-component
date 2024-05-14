@@ -3,6 +3,7 @@
 @use "./components/" as *;
 @use "./layout/" as *;
 .preview {
+  background-color: $clr-bleached-silk;
   @include laptop {
     min-height: 100vh;
   }

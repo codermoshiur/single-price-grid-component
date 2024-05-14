@@ -1,18 +1,29 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 body {
   font-family: $font-primary;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  color: $clr-white;
-  line-height: 1.6;
+  font-size: 0.875rem;
+  color: $clr-veranda-iris;
+  line-height: 1.8;
   -webkit-font-smoothing: antialiased;
+  @include tablet {
+    font-size: 1rem;
+  }
 }
-h2 {
+.single-price__title {
+  font-size: 1.25rem;
+  color: $clr-island-aqua;
   font-family: $font-secondary;
-  font-size: 2.5rem;
-  font-weight: 700;
-  font-style: normal;
-  color: $clr-bleached-silk;
-  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.0156rem;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+}
+.single-price__sub-title {
+  color: $clr-white;
+  font-size: 1.125rem;
+  font-family: $font-secondary;
+  margin-bottom: 1.125rem;
+  letter-spacing: -0.0138rem;
 }

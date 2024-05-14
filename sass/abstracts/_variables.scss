@@ -1,9 +1,10 @@
+@use "../base/fonts" as *;
 // FONTS
-$font-primary: "Lexend Deca", sans-serif;
-$font-secondary: "Big Shoulders Display", sans-serif;
+$font-primary: "Karla-Regular", sans-serif;
+$font-secondary: "Karla-Bold", sans-serif;
 // COLORS
-$clr-bleached-silk: hsl(0, 0%, 95%);
+$clr-island-aqua: hsl(179, 62%, 43%);
 $clr-white: hsl(0, 0%, 100%);
-$clr-rich-black: hsl(179, 100%, 13%);
-$clr-fanfare: hsl(184, 100%, 22%);
-$clr-french-toast: hsl(31, 77%, 52%);
+$clr-acid-lime: hsl(71, 73%, 54%);
+$clr-veranda-iris: hsl(217, 22%, 67%);
+$clr-clear-vision: hsl(204, 43%, 93%);

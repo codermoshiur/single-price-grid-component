@@ -8,7 +8,7 @@
       href="./assets/images/favicon-32x32.png"
       type="image/x-icon"
     />
-    <title>3-column preview card component</title>
+    <title>Single price grid component</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,70 +18,54 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <main>
-      <section class="preview">
+    <main class="main">
+      <section class="single-price">
         <div class="container">
-          <div class="preview__card">
-            <div class="card card--bg-french-toast">
-              <img
-                src="./assets/images/icon-sedans.svg"
-                alt="Sedans"
-                class="card__img-top"
-                width="64"
-                height="40"
-              />
-              <div class="card__body">
-                <h2>Sedans</h2>
-                <p>
-                  Choose a sedan for its affordability and excellent fuel
-                  economy. Ideal for cruising in the city or on your next road
-                  trip.
-                </p>
-                <a
-                  href="./index.html"
-                  class="card__btn btn btn--clr-french-toast"
-                  >Learn More</a
-                >
-              </div>
+          <div class="single-price__grid">
+            <!-- Item 1 -->
+            <div class="single-price__grid-item single-price__grid-item--first">
+              <h1 class="single-price__title">Join our community</h1>
+              <h2 class="single-price__sub-title">
+                30-day, hassle-free money back guarantee
+              </h2>
+              <p class="single-price__copy">
+                Gain access to our full library of tutorials along with expert
+                code reviews. Perfect for any developers who are serious about
+                honing their skills.
+              </p>
             </div>
-            <div class="card card--bg-fanfare">
-              <img
-                src="./assets/images/icon-suvs.svg"
-                alt="Sedans"
-                class="card__img-top"
-                width="64"
-                height="40"
-              />
-              <div class="card__body">
-                <h2>SUVs</h2>
-                <p>
-                  Take an SUV for its spacious interior, power, and versatility.
-                  Perfect for your next family vacation and off-road adventures.
-                </p>
-                <a href="./index.html" class="card__btn btn btn--clr-fanfare"
-                  >Learn More</a
-                >
+            <!-- Item 2 -->
+            <div
+              class="single-price__grid-item single-price__grid-item--second"
+            >
+              <h2 class="single-price__sub-title">Monthly Subscription</h2>
+              <div class="single-price__subscription">
+                <div class="single-price__subscription-amount">$29</div>
+                <span class="single-price__subscription-period">per month</span>
               </div>
+              <p class="single-price__copy">
+                Full access for less than $1 a day
+              </p>
+              <a href="./index.html" class="single-price__cta btn">Sign Up</a>
             </div>
-            <div class="card card--bg-rich-black">
-              <img
-                src="./assets/images/icon-luxury.svg"
-                alt="Luxury"
-                class="card__img-top"
-                width="64"
-                height="40"
-              />
-              <div class="card__body">
-                <h2>Luxury</h2>
-                <p>
-                  Cruise in the best car brands without the bloated prices.
-                  Enjoy the enhanced comfort of a luxury rental and arrive in
-                  style.
-                </p>
-                <a href="./index.html" class="card__btn btn btn--clr-rich-black"
-                  >Learn More</a
-                >
-              </div>
+            <!-- Item 3 -->
+            <div class="single-price__grid-item single-price__grid-item--third">
+              <h2 class="single-price__sub-title">Why Us</h2>
+              <ul class="single-price__list">
+                <li class="single-price__list-item">
+                  Tutorials by industry experts
+                </li>
+                <li class="single-price__list-item">
+                  Peer & expert code review
+                </li>
+                <li class="single-price__list-item">Coding exercises</li>
+                <li class="single-price__list-item">
+                  Access to our GitHub repos
+                </li>
+                <li class="single-price__list-item">Community forum</li>
+                <li class="single-price__list-item">Flashcard decks</li>
+                <li class="single-price__list-item">New videos every week</li>
+              </ul>
             </div>
           </div>
         </div>

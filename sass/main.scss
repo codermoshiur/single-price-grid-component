@@ -1,17 +1,63 @@
-@use "./base/" as *;
 @use "./abstracts/" as *;
+@use "./base/" as *;
 @use "./components/" as *;
 @use "./layout/" as *;
-.preview {
-  background-color: $clr-bleached-silk;
-  @include laptop {
-    min-height: 100vh;
-  }
-  padding: 1.5rem 0;
-  &__card {
-    @include laptop {
-      max-width: 57.5rem;
-      margin-inline: auto;
+.single-price {
+  background-color: $clr-clear-vision;
+  padding: 4.5rem 0;
+  &__grid-item {
+    padding: 1.5rem;
+    @include tablet {
+      padding: 2.5rem;
+    }
+    &--first {
+      grid-area: first;
+      background-color: $clr-white;
+      border-top-left-radius: 0.3125rem;
+      border-top-right-radius: 0.3125rem;
+      .single-price__sub-title {
+        color: $clr-acid-lime;
+        @include tablet {
+          margin-bottom: 0.6875rem;
+        }
+      }
+    }
+    &--second {
+      grid-area: second;
+      background-color: $clr-island-aqua;
+      @include tablet {
+        border-bottom-left-radius: 0.3125rem;
+      }
+      .single-price__subscription {
+        display: flex;
+        align-items: center;
+        gap: 0.6875rem;
+      }
+      .single-price__subscription-amount {
+        font-size: 2rem;
+        font-family: $font-secondary;
+        color: $clr-white;
+      }
+      .single-price__subscription-period {
+        font-size: 1rem;
+        color: $clr-acid-lime;
+      }
+      .single-price__copy {
+        color: $clr-white;
+        font-size: 1rem;
+        margin-bottom: 1.625rem;
+      }
+    }
+    &--third {
+      grid-area: third;
+      background-color: lighten($clr-island-aqua, 10%);
+      @include tablet {
+        border-bottom-right-radius: 0.3125rem;
+      }
+      .single-price__list-item {
+        color: $clr-white;
+        font-size: 0.875rem;
+      }
     }
   }
 }

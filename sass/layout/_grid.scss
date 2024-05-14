@@ -1,26 +1,10 @@
 @use "../abstracts/mixins" as *;
-//section preview
-.preview {
-  @include laptop {
+.single-price__grid {
+  @include tablet {
     display: grid;
-    place-content: center;
-  }
-  &__card {
-    @include tablet {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-    }
-  }
-}
-// card
-.card {
-  @include grid-auto;
-  gap: 2.1875rem;
-  &__body {
-    @include grid-auto;
-    gap: 1.5625rem;
-  }
-  &__btn {
-    justify-self: start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "first first"
+      "second third";
   }
 }

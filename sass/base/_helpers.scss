@@ -1,5 +1,10 @@
+@use "../abstracts/mixins" as *;
 .container {
-  width: min(100%, 90rem);
+  width: min(100%, 23.4375rem);
   margin-inline: auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
+  @include tablet {
+    width: min(100%, 39.6875rem);
+    padding: 0;
+  }
 }

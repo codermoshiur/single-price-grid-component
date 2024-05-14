@@ -1,4 +1,4 @@
-# Frontend Mentor - 3-column preview card component
+# Frontend Mentor - Single price grid component
 
 ## Overview
 
@@ -10,8 +10,8 @@
 
 ### Links
 
-- Live Site URL: [https://codermoshiur.github.io/3-column-preview-card-component/](https://codermoshiur.github.io/3-column-preview-card-component/)
-- Solution URL: [https://www.frontendmentor.io/solutions/3column-preview-card-component-using-sass-Idr6btrVox](https://www.frontendmentor.io/solutions/3column-preview-card-component-using-sass-Idr6btrVox)
+- Live Site URL: []()
+- Solution URL: []()
 
 ## My process
 

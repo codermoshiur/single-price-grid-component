@@ -117,11 +117,16 @@ body {
   color: hsl(0, 0%, 100%);
   width: 100%;
   text-align: center;
+  box-shadow: 0 0.625rem 0.625rem 0 hsla(0, 0%, 0%, 0.0973);
 }
 .btn:is(:hover, :active) {
   background-color: #a4c21e;
 }
 
+.single-price {
+  display: grid;
+  place-content: center;
+}
 @media (min-width: 48rem) {
   .single-price__grid {
     display: grid;
@@ -131,8 +136,12 @@ body {
 }
 
 .single-price {
+  min-height: 100vh;
   background-color: hsl(204, 43%, 93%);
   padding: 4.5rem 0;
+}
+.single-price__grid {
+  box-shadow: 0 0.9375rem 1.875rem 0 hsla(212, 100%, 34%, 0.149);
 }
 .single-price__grid-item {
   padding: 1.5rem;
@@ -177,7 +186,7 @@ body {
 }
 .single-price__grid-item--second .single-price__subscription-period {
   font-size: 1rem;
-  color: hsl(71, 73%, 54%);
+  color: #e6e6e6;
 }
 .single-price__grid-item--second .single-price__copy {
   color: hsl(0, 0%, 100%);

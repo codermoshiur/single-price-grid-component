@@ -1,10 +1,14 @@
 @use "../abstracts/mixins" as *;
-.single-price__grid {
-  @include tablet {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "first first"
-      "second third";
+.single-price {
+  display: grid;
+  place-content: center;
+  &__grid {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "first first"
+        "second third";
+    }
   }
 }

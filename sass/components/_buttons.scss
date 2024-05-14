@@ -13,6 +13,7 @@
     color: $clr-white;
     width: 100%;
     text-align: center;
+    box-shadow: 0 0.625rem 0.625rem 0 $clr-black;
   }
   &:is(:hover, :active) {
     background-color: darken($clr-acid-lime, 10%);

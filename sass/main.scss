@@ -3,8 +3,12 @@
 @use "./components/" as *;
 @use "./layout/" as *;
 .single-price {
+  min-height: 100vh;
   background-color: $clr-clear-vision;
   padding: 4.5rem 0;
+  &__grid {
+    box-shadow: 0 0.9375rem 1.875rem 0 $clr-blue-lobster;
+  }
   &__grid-item {
     padding: 1.5rem;
     @include tablet {
@@ -40,7 +44,7 @@
       }
       .single-price__subscription-period {
         font-size: 1rem;
-        color: $clr-acid-lime;
+        color: darken($clr-white, 10%);
       }
       .single-price__copy {
         color: $clr-white;

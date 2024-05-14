@@ -1,0 +1,16 @@
+@use "./base/" as *;
+@use "./abstracts/" as *;
+@use "./components/" as *;
+@use "./layout/" as *;
+.preview {
+  @include laptop {
+    min-height: 100vh;
+  }
+  padding: 1.5rem 0;
+  &__card {
+    @include laptop {
+      max-width: 57.5rem;
+      margin-inline: auto;
+    }
+  }
+}

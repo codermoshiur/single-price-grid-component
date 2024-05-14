@@ -1,0 +1,21 @@
+//Grid
+@mixin grid-auto {
+  display: grid;
+  grid-template-columns: auto;
+}
+//Media Query
+@mixin mobile-landscape {
+  @media (min-width: 30.0625rem) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 48rem) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: 64.0625rem) {
+    @content;
+  }
+}

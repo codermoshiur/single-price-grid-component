@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.card {
+  padding: 3rem;
+  &--bg-french-toast {
+    background-color: $clr-french-toast;
+    border-top-left-radius: 1.5625rem;
+    border-top-right-radius: 1.5625rem;
+  }
+  &--bg-fanfare {
+    background-color: $clr-fanfare;
+  }
+  &--bg-rich-black {
+    background-color: $clr-rich-black;
+    border-bottom-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+  }
+  @include mobile-landscape {
+    max-width: 20.4375rem;
+    margin-inline: auto;
+  }
+  @include tablet {
+    max-width: 100%;
+    padding: 1.5rem;
+    &--bg-french-toast {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 1.5625rem;
+    }
+    &--bg-rich-black {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1.5625rem;
+      border-bottom-right-radius: 1.5625rem;
+    }
+  }
+  @include laptop {
+    padding: 3rem;
+  }
+}

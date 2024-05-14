@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+.btn {
+  &:is(:link, :visited) {
+    background-color: $clr-white;
+    padding: 0.75rem 2rem;
+    border-radius: 1.5625rem;
+    display: inline-block;
+    border: 0.125rem solid $clr-white;
+    border-radius: 1.5625rem;
+    cursor: pointer;
+  }
+  &--clr-french-toast {
+    &:is(:link, :visited) {
+      color: $clr-french-toast;
+    }
+  }
+  &--clr-fanfare {
+    &:is(:link, :visited) {
+      color: $clr-fanfare;
+    }
+  }
+  &--clr-rich-black {
+    &:is(:link, :visited) {
+      color: $clr-rich-black;
+    }
+  }
+  &:is(:hover, :active) {
+    background-color: transparent;
+    color: $clr-white;
+  }
+}

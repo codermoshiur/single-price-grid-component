@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  color: $clr-white;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h2 {
+  font-family: $font-secondary;
+  font-style: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+  color: $clr-bleached-silk;
+  text-transform: uppercase;
+}
